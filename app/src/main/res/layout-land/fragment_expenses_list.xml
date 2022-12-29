@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ExpensesListFragment">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/rectangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:background="@drawable/pentagon"
+                    app:layout_constraintEnd_toEndOf="@id/rectangle_2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/budget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/budget"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:textAppearance="@style/total_amt_spent"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Your Budget: $500" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/editFloatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:contentDescription="@string/edit_budget"
+                    android:src="@drawable/edit"
+                    app:fabSize="mini"
+                    app:layout_constraintBottom_toBottomOf="@id/budget"
+                    app:layout_constraintStart_toEndOf="@id/budget"
+                    app:layout_constraintTop_toTopOf="@id/budget"
+                    app:tint="@android:color/white"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/total_amount_spent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="22dp"
+                    android:textAppearance="@style/total_amt_spent"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/budget"
+                    tools:text="@string/total_amt_spent" />
+
+                <TextView
+                    android:id="@+id/budget_warning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textAppearance="@style/warning"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/total_amount_spent"
+                    app:layout_constraintTop_toBottomOf="@id/total_amount_spent"
+                    tools:ignore="TextContrastCheck"
+                    tools:text="@string/warning" />
+
+                <View
+                    android:id="@+id/rectangle_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="950dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle_2"
+                    android:backgroundTint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/budget_warning" />
+
+                <TextView
+                    android:id="@+id/expenses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rectangle_2"
+                    android:layout_marginEnd="160dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/expenses"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/total_amt_spent"
+                    app:layout_constraintEnd_toStartOf="@id/cost"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/rectangle_2" />
+
+                <TextView
+                    android:id="@+id/cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="48dp"
+                    android:text="@string/cost"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/total_amt_spent"
+                    android:fontFamily="@font/roboto_medium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/expenses"
+                    app:layout_constraintTop_toTopOf="@id/rectangle_2" />
+
+                <View
+                    android:id="@+id/divider"
+                    style="@style/Divider"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="@id/rectangle_2"
+                    app:layout_constraintStart_toStartOf="@id/rectangle_2"
+                    app:layout_constraintTop_toBottomOf="@id/expenses"
+                    app:layout_constraintBottom_toTopOf="@id/recyclerView" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="8dp"
+                    android:scrollbars="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/divider" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_item_floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:contentDescription="@string/add_expense"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_constraintBottom_toTopOf="@id/delete_all_floating_action_button"
+            app:layout_constraintEnd_toEndOf="@id/delete_all_floating_action_button"
+            app:layout_constraintStart_toStartOf="@id/delete_all_floating_action_button"
+            app:tint="@android:color/white"
+            tools:ignore="ImageContrastCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/delete_all_floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:contentDescription="@string/delete_all"
+            android:src="@drawable/delete_all"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@android:color/white"
+            tools:ignore="ImageContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
