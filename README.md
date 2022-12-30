@@ -18,8 +18,8 @@ This is a 100% offline android application to track the user's budget. You can s
 
 
 ### List of Expenses Screen
-![image](https://user-images.githubusercontent.com/55046164/210106989-d1dc6746-d237-4b35-bc24-262579bd9aea.png)
-![image](https://user-images.githubusercontent.com/55046164/210107198-01c10b1d-e227-4b88-a40a-73f7767023f5.png)
+![image](https://user-images.githubusercontent.com/55046164/210109165-e5686136-ea7c-4788-84f3-9d3c28a30c23.png)
+![image](https://user-images.githubusercontent.com/55046164/210109122-914b443d-9260-4316-8514-e8b07f7e82d1.png)
 
 
 ### Adding an expense
