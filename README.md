@@ -3,7 +3,7 @@ This is a 100% offline android application to track the user's budget. You can s
 Users table stores the User authentication information such as username, password and recovery code;
 UserBudgetInfo table stores the budget and moneyspent by all the users(user_id);
 Expenses table stores unique(not redundant) names of the expenses;
-UserExpenses table stores the expenses(item_id) corresponding user_id and price of the expense/item.
+UserExpenses table stores the expenses(item_id) and its corresponding user_id and price of the expense/item.
 
 ## Glimpses of the app:-
 ### Signup Screen
