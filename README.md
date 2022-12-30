@@ -13,3 +13,7 @@ This is a 100% offline android application to track the user's budget. You can s
 ### Forgot Password
 ![image](https://user-images.githubusercontent.com/55046164/210106687-ef83c1cc-4cbb-49c4-8d41-81617d92ce2c.png)
 ![image](https://user-images.githubusercontent.com/55046164/210106733-ff134eea-d8ff-4560-85bc-91dcaed2c616.png)
+
+### List of Expenses Screen
+![image](https://user-images.githubusercontent.com/55046164/210106989-d1dc6746-d237-4b35-bc24-262579bd9aea.png)
+![image](https://user-images.githubusercontent.com/55046164/210107198-01c10b1d-e227-4b88-a40a-73f7767023f5.png)
