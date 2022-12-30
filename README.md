@@ -1,8 +1,8 @@
 # BudgetTracker
 This is a 100% offline android application to track the user's budget. You can sign up and then login to see the past records of the expenses entered by you. The user can add, edit and delete the records. The data is stored in SQLite Database which contains 4 tables:-
-Users table stores the User authentication information such as username, password and recovery code.
-UserBudgetInfo table stores the budget and moneyspent by all the users(user_id).
-Expenses table stores unique(not redundant) names of the expenses
+Users table stores the User authentication information such as username, password and recovery code;
+UserBudgetInfo table stores the budget and moneyspent by all the users(user_id);
+Expenses table stores unique(not redundant) names of the expenses;
 UserExpenses table stores the expenses(item_id) corresponding user_id and price of the expense/item.
 
 ## Glimpses of the app:-
