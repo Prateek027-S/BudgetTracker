@@ -23,4 +23,4 @@ This is a 100% offline android application to track the user's budget. You can s
 
 
 ### Adding an expense
-![image](https://user-images.githubusercontent.com/55046164/210107367-e7858676-4bee-462e-919a-82acc113555c.png)
+![image](https://user-images.githubusercontent.com/55046164/210109226-e253c6d6-c09d-4a1e-b2c6-0e586ecf6845.png)
