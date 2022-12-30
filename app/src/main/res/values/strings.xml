@@ -57,5 +57,6 @@
     <string name="delete_all">Delete all records</string>
     <string name="delete_all_successful">All records deleted successfully</string>
     <string name="expense_add_successful">Record added successfully</string>
+    <string name="expense_details">Details of the Expense</string>
 
 </resources>

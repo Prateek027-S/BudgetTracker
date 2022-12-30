@@ -76,7 +76,7 @@
     <fragment
         android:id="@+id/expenseDetailFragment"
         android:name="com.example.budgettracker.ExpenseDetailFragment"
-        android:label="ExpenseDetailFragment" >
+        android:label="@string/expense_details" >
         <action
             android:id="@+id/action_expenseDetailFragment_to_addExpenseFragment"
             app:destination="@id/addExpenseFragment" />
