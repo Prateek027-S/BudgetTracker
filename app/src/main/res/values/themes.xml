@@ -8,10 +8,12 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/sec_blue</item>
         <item name="colorSecondaryVariant">@color/sec_dark_blue</item>
-        <item name="colorOnSecondary">@color/colorButtonLight</item>
+        <item name="colorOnSecondary">@color/sub_heading_color</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/sub_heading_color</item>
     </style>
 
 </resources>

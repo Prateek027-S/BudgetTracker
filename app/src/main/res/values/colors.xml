@@ -8,6 +8,10 @@
     <color name="sec_blue">#b3e5fc</color>
     <color name="sec_dark_blue">#82b3c9</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorButtonLight">#000113</color>
+    <color name="sub_heading_color">#000113</color>
+    <color name="heading_color">#1E293B</color>
+    <color name="warning_color">#F54646</color>
+    <color name="small_texts_color">#F54646</color>
+    <color name="small_sub_texts_color">#828282</color>
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/blue</color>
 </resources>
