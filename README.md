@@ -4,7 +4,7 @@ Users table stores the User authentication information such as username, passwor
 UserBudgetInfo table stores the budget and moneyspent by all the users(user_id);
 Expenses table stores unique(not redundant) names of the expenses;
 UserExpenses table stores the expenses(item_id) and its corresponding user_id and price of the expense/item.
-
+#### Note: You can download the apk of the app from the "Releases" section!
 ## Glimpses of the app:-
 ### Signup Screen
 ![image](https://user-images.githubusercontent.com/55046164/210106460-b1203d0a-767b-46c5-bdba-96adbae13699.png)
